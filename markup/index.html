@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+table {
+   table-layout: fixed;
+   border: 1px solid black;
+   width: 18cm;
+}
+
+td {
+   width: 50px;
+   height: 50px;
+   border: 1px solid #000;
+   text-align: center;
+}
+.blue {
+    background-color: blue;
+}
+.yellow{
+    background-color: yellow;
+}
+    </style>
+</head>
+<body>
+    <head>
+        <table>
+            <tr>
+                <td colspan="3" class="blue">MY FIRST TABLE</td>
+            </tr>
+            <tr>
+                <td class="blue">First cell</td>
+                <td class="blue">Second cell</td>
+                <td rowspan="3" class="yellow">6 cells merged together</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="yellow">2 cells merget into one</td>
+            </tr>
+            <tr>
+                <td class="yellow">1st cell <br> 3rd row</td>
+                <td class="yellow">2nd cell <br> 3rd row</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="yellow">Do you like tables?</td>
+            </tr>
+        </table>
+    </head>
+    <main></main>
+    <footer></footer>
+</body>
+</html>
